@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<casa xml:lang="cast">
+	<padres>
+		<padre gadafista="si">&quot;Pep Conel&quot;</padre>
+		<madre gadafista="ns">&quot;Nenuco&quot;</madre>
+	</padres>
+	<hijos>
+		<hijo hermano="mayor" gadafista="si">&quot;Orosio&quot;</hijo>
+		<hijo hermano="menor" gadafista="no">&quot;Gobelio&quot;</hijo>
+	</hijos>
+	<animales>
+		<perros>
+			<perro1 edad="mayor" tamaño="pequeño" nombre="Caos" />
+			<perro2 edad="adulto" tamaño="pequeño" nombre="Clow" />
+			<perro3 edad="adulto" tamaño="mediano" nombre="Kio" />
+		</perros>
+		<gatos>
+			<![CDATA[
+				if (aparatoReproductor == "pene"{
+					genero == macho;
+				} else {
+					genero == hembra;
+			]]>
+			<gato genero="macho" edad="adulto" tamaño="mediano" nombre="Mbappé" />
+			<gato genero="hembra" edad="adulta" tamaño="grande" nombre="Mai" />
+		</gatos>
+	</animales>
+</casa>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<canciones>
+	<!-- informacion de cada cancion -->
+	<cancion>
+		<nombre_artista></nombre_artista>
+		<titulo album=""></titulo>
+		<duracion_segundos></duracion_segundos>
+		<estilo_musica xml:lang="cast"></estilo_musica>
+		<puntuacion></puntuacion>
+		<momento_inicio></momento_inicio>
+		<momento_fin></momento_fin>
+		<!--El estilo de corte puede ser: "fade in", "fade-out" o "cut" -->
+		<estilo_de_corte tipo="fade_in fade-out cut"></estilo_de_corte>
+	</cancion>
+	<cancion>
+	</cancion>
+</canciones>
