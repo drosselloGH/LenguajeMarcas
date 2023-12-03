@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 30</title>
+    <style>
+        body{
+            height: 20000px;
+        }
+        ul{
+            list-style-type: none;
+            /* hacemos que cuando hacemos scroll,
+            no se "pierda", sino que se quede en el borde superior de la pagina */
+            position: sticky;
+            /* a que distancia se separa del tope de la pagina */
+            top: 5px;
+        }
+        li{
+            /*convertimos cajas que se comportan como bloques,
+            que se comporten como inlines*/
+            display: inline-block;
+            margin: 4px;
+            padding: 5px;
+            background-color: crimson;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elementos inline-block</h1>
+    <ul>
+        <li>Inicio</li>
+        <li>Nacional</li>
+        <li>Internacional</li>
+        <li>Opinion</li>
+        <li>Deporte</li>
+    </ul>
+</body>
+</html>

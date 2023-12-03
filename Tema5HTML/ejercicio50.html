@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Ejercicio 50</title>
+    <style>
+      * {
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* estilos contenedor */
+      #contenedor {
+        margin-top: 1rem;
+        font-family: sans-serif;
+        margin-left: 17%;
+      }
+      /* estilos columna izquierda */
+      #col-izquierda {
+        width: 50rem;
+        float: left;
+        margin-right: 2rem;
+      }
+      #imagen-principal{
+        position: relative;
+      }
+      #col-izquierda h1 {
+        font-family: serif;
+      }
+      #descripcion {
+        text-align: right;
+      }
+      /* estilos columna derecha */
+      #col-derecha {
+        float: left;
+        width: 21rem;
+      }
+      #col-derecha h2 {
+        font-family: sans-serif;
+      }
+      #noticia1{
+        margin-bottom: 3rem;
+      }
+      
+      #col-izquierda img {
+        width: 100%;
+      }
+      #otra-noticia {
+        font-weight: bold;
+      }
+     
+      #directo {
+        color: red;
+      }
+      #otra-noticia {
+        margin-top: 1rem;
+      }
+      #otra-noticia img {
+        float: left;
+        width: 22%;
+        margin-right: 0.5rem;
+      }
+      /* estilos generales */
+      i{
+        color: grey;
+        margin: 0rem 0.2rem 0rem 0.5rem;
+      }
+      .comentarios {
+        color: rgb(0, 140, 255);
+      }
+      .autor,
+      #directo {
+        font-variant: small-caps;
+      }
+      .subtitulo, #descripcion {
+        color: rgb(160, 159, 159);
+      }
+      .subtitulo{
+       margin-top: 0.7rem;
+      }
+      .autor{
+        padding-right: 0.5rem;
+        border-right: 1px solid black;
+      }
+      .info{
+        margin-top: 0.5rem;
+      }
+      .autor,
+      .pagina,
+      .comentarios {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contenedor">
+      <div id="col-izquierda">
+        <div id="imagen-principal">
+        <i class="bi bi-play-circle play"></i>
+        <img src="ejercicios/imgs/evergiven.png" alt="navío Ever Given" />
+      </div>
+        <div id="descripcion">
+          <p>Los remolcadores consiguen mover el 'Ever Given', este lunes.</p>
+        </div>
+        <h1>
+          El canal de Suez restablece el tráfico tras conseguir reflotar el
+          buque atascado
+        </h1>
+        <div class="info">
+          <div class="autor">marc español</div>
+          <span class="pagina">Ismailía</span>
+          <i class="bi bi-chat-left-fill comentario"></i>
+          <span class="comentarios">33</span>
+        </div>
+        <div class="subtitulo">
+          <p>
+            Las maniobras logran desencallar el 'Ever Given' después de seis
+            días. El presidente egipcio Al Sisi dice que la crisis ha
+            finalizado, pero más de 400 buques siguen a la espera para poder
+            atravesar la vía
+          </p>
+        </div>
+      </div>
+      <div id="col-derecha">
+        <div id="noticia1">
+          <h2>
+            El déficit se dispara por encima del 10% del PIB en 2020 por la
+            pandemia
+          </h2>
+          <div class="info">
+            <div class="autor">laura delle femme</div>
+            <span class="pagina">Madrid</span>
+            <i class="bi bi-chat-left-fill comentario"></i>
+            <span class="comentarios">17</span>
+          </div>
+          <div class="subtitulo">
+            <p>
+              Los números rojos de las administraciones aumentaron por la caída
+              de ingresos y la subida del gasto ante la crisis.
+            </p>
+          </div>
+          <div id="otra-noticia">
+            <img src="ejercicios/imgs/graffiti.PNG" alt="graffiti" />
+            <p>
+              El coronavirus provoca la mayor subida de gasto público en
+              democracia
+            </p>
+          </div>
+        </div>
+        <div id="noticia2">
+          <span id="directo">en directo</span>
+          <h2>
+            Madrid vuelve a estar en riesgo muy alto al superar los 250 casos
+            por 100.000 habitantes
+          </h2>
+          <div class="subtitulo">
+            <p>
+              Sanidad comunica 15.501 nuevos contagios por coronavirus y 189
+              muertes desde el viernes
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

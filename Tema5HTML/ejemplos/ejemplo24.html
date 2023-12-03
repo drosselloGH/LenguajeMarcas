@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 24</title>
+    <style>
+        table{
+            width: 25%;
+            /*hacemos que se quiten las separaciones de las celdas que esten juntas*/
+            border-spacing: 0px;
+            border-collapse: collapse;
+        }
+        td, th{
+            padding: 5px;
+            border-bottom: 2px solid aquamarine;
+        }
+
+        .fruta{
+            font-weight: normal;
+            text-align: left;
+        }
+        .fila:hover{
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .precio{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+
+        hacemos "tr*cantidad>td*cantidad"
+
+    -->
+    <h1>Tablas con estilos</h1>
+    <table>
+        <tr>
+            <th class="fruta">Fruta</th>
+            <th>Precio</th>
+        </tr>
+        <tr class="fila">
+            <td>Sandia</td>
+            <td class="precio">5</td>
+        </tr>
+        <tr class="fila">
+            <td>Peras</td>
+            <td class="precio">1,50</td>
+        </tr>
+        <tr class="fila">
+            <td>Plátanos</td>
+            <td class="precio">2,05</td>
+        </tr>
+        <tr class="fila">
+            <td>Kiwi</td>
+            <td class="precio">4</td>
+        </tr>
+
+    </table>
+</body>
+</html>

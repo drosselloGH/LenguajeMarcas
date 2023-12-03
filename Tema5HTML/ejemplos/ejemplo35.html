@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .menu{
+            overflow: auto;
+            color: white;
+            background-color: #333;
+        }
+        a{
+            color: white;
+        }
+        li:hover{
+            background-color: #111;
+        }
+        .item_menu{
+            list-style-type: none;
+            float: left;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* tambien se puede dejar asi, dado que es mas especifico, ya que a mas especifico mayor preferencia tiene */
+        li.activo{
+            background-color: red !important;
+            /* !important da preferencia a la regla
+            en este caso, se da preferencia al estilo de 
+            .activo frente a el resto de elementos de la lista */
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <!-- para hacer una clase de una clase, ponemos el nombre de la segunda clase separado por un espacio -->
+        <a href=""><li class="item_menu activo">Home</li></a>
+        <a href=""><li class="item_menu">News</li></a>
+        <a href=""><li class="item_menu">Contact</li></a>
+        <a href=""><li class="item_menu">About</li></a>
+        <!-- de este modo hacemos que no se tenga que clicar la palabra en si, sino toda la linea de la tabla -->
+    </ul>
+</body>
+</html>

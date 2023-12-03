@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 23</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 25%;
+        }
+        td, th{
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        th{
+            font-weight: normal;
+            background-color: grey;
+            color: white;
+        }
+
+        /*estas dos modifican las filas que sean pares (odd) o impares (even)*/
+        .fila:nth-child(even){
+            background-color: aqua;
+
+        }
+
+        .fila:nth-child(odd){
+            background-color: coral;
+        }
+
+        .fila:hover{
+            background-color: pink;
+            color: white;
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .precio{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+
+        hacemos "tr*cantidad>td*cantidad"
+
+    -->
+    <h1>Tablas con estilos</h1>
+    <table>
+        <tr>
+            <th>Fruta</th>
+            <th>Precio</th>
+        </tr>
+        <tr class="fila">
+            <td>Sandia</td>
+            <td class="precio">5</td>
+        </tr>
+        <tr class="fila">
+            <td>Peras</td>
+            <td class="precio">1,50</td>
+        </tr>
+        <tr class="fila">
+            <td>Plátanos</td>
+            <td class="precio">2,05</td>
+        </tr>
+        <tr class="fila">
+            <td>Kiwi</td>
+            <td class="precio">4</td>
+        </tr>
+
+    </table>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo 32</title>
+    <style>
+        #contenedor1{
+            width: 200px;
+            height: 65px;
+            background-color: coral;
+            /* overflow establece unas dimensiones, como si estableciese un límite de hasta cuanto
+            se podria ver del contenido entre sus límites
+                - visible: deja ver todo
+            */
+            overflow: visible;
+        }
+        #contenedor2{
+            margin-top: 200px;
+            width: 200px;
+            height: 65px;
+            background-color: coral;
+            /* 
+                - hidden: solo muestra hasta el tamaño indicado por el contenedor
+            */
+            overflow: hidden;
+        }
+        #contenedor3{
+            margin-top: 50px;
+            width: 200px;
+            height: 65px;
+            background-color: coral;
+            /*
+                - scroll: muestra todo el contenido dentro del contenedor, pero con el tamaño establecido, 
+                            es decir, poniendo una barra de scroll para ver el contenido
+                - auto: es como "scroll", pero sólo pone la barra de scroll si es necesario
+            */
+            overflow: scroll;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Overflow</h1>
+    <div id="contenedor1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure delectus
+        exercitationem animi odit a perspiciatis quod veritatis? Fuga molestiae
+        corporis asperiores voluptas dignissimos, voluptatem eveniet nesciunt
+        omnis quibusdam ad quia mollitia optio doloribus deserunt? Modi, quod?
+        Deleniti ab vitae commodi.
+      </p>
+    </div>
+    <div id="contenedor2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure delectus
+          exercitationem animi odit a perspiciatis quod veritatis? Fuga molestiae
+          corporis asperiores voluptas dignissimos, voluptatem eveniet nesciunt
+          omnis quibusdam ad quia mollitia optio doloribus deserunt? Modi, quod?
+          Deleniti ab vitae commodi.
+        </p>
+      </div>
+      <div id="contenedor3">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure delectus
+          exercitationem animi odit a perspiciatis quod veritatis? Fuga molestiae
+          corporis asperiores voluptas dignissimos, voluptatem eveniet nesciunt
+          omnis quibusdam ad quia mollitia optio doloribus deserunt? Modi, quod?
+          Deleniti ab vitae commodi.
+        </p>
+      </div>
+  </body>
+</html>

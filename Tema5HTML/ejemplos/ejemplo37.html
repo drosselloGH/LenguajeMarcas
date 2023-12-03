@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 37</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            margin: 1rem;
+        }
+        .linea_centrada{
+            height: 300px;
+            border: 1px solid red;
+            position: relative;
+        }
+        .centrado_vertical{
+            /* colocamos el texto enmedio del div, esta centrado el principio del texto */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* mueve el texto un 50% relativo al texto */
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Centrar una linea de texto usando transform: translate()</h1>
+    <div class="linea_centrada">
+       <p class="centrado_vertical"> Ésta es una línea centrada en vertical</p>
+    </div>
+</body>
+</html>

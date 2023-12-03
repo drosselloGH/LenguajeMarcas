@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 15</title>
+    <style>
+        /*quitamos los margenes y padding*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*el ancho es un 50% del ancho del contenedor(body)*/
+        .mitad{
+            width: 50%;
+            padding: 20px;
+        }
+
+        .contenedor{
+            font-size: 24px;
+        }
+
+        /*1em = 16px (tamaño de la fuente)
+        (16 si no hemos cambiado nada, tamaño predeterminado)
+        el em busca el tamaño de fuente del bloque en el que está*/
+        /*el ancho es 20 veces el tamaño de fuente del contenedor*/
+        .unidades-em{
+            width: 20em;
+            background-color: palegreen;
+        }
+
+        /*el ancho es 20 veces el tamaño de la fuente por defecto del navegador*/
+        /*ren = root em*/
+        .unidades-rem{
+            width: 20rem;
+            background-color: palegreen;
+
+        }
+
+        /*el ancho es 33% del ancho de la ventana dl navegador*/
+        /*vw = viewport width*/
+        .unidades-vw{
+            width: 33vw;;
+        }
+
+        /*el ancho es un 30% de la altura de la ventana del navegador*/
+        /*vh = viewport height*/
+        .unidades-vh{
+            width: 30vh;
+        }
+
+        div{
+            background-color: palevioletred;
+            height: 75px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Unidades de medida</h1>
+    <div class="mitad">Este div tiene un ancho de la mitad de la pantalla</div>
+
+    <div class="contenedor"><div class="unidades-em">Este div tiene un ancho de 20 em</div></div>
+
+    <div class="contenedor"><div class="unidades-rem">Este div tiene un ancho de 20 rem</div></div>
+
+    <div class="unidades-vw">Este div tiene un ancho de un tercio de la ventana</div>
+
+    <div class="unidades-vh">Este div teiene un ancho que es un 30% de la altura de la ventana</div>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 6</title>
+    <style>
+        /*tipos de margenes*/
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div{
+            width: 200px;
+            height: 150px;
+        }
+        #caja1{
+            /*los margenes top y bottom se solapan
+            20 de bottom y 20 de top no son 40, sino 20
+            si fuese 10 y 40, se pondria un margen de 30 (40-10)*/
+            margin-top: 50px;
+            margin-left: 100px;
+            margin-bottom: 20px;
+            background-color: aquamarine;
+        }
+        #caja2{
+            background-color: yellow;
+            margin-top: 20px;
+        }
+        #caja3{
+            /*
+            margen de 30px en todos los lados
+            margin: 30px;
+            */
+            /*el primer numero es arriba-abajo, el otro izquierda-derecha*
+            margin: 30px 20px
+            */
+            /*como un reloj: arriba-derecha-abajo-izquierda*/
+            margin: 30px 20px 10px 5px;
+            background-color: cadetblue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="caja1"></div>
+    <div id="caja2"></div>
+    <div id="caja3"></div>
+</body>
+
+</html>

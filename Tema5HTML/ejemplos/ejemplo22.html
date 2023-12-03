@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 22</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: green;
+        }
+
+        /*estos estilos deben estar en este orden
+        sino, pueden fallar*/
+
+        /*esto es una pseudoclase
+        comprobamos si el link ha sido visitado*/
+        a:visited{
+            color: red;
+        }
+        /*hover significa "pasar por encima"
+        esto es lo que pasa cuando pasamos por encima del enlace*/
+        a:hover{
+            font-size: 20px;
+            text-decoration: underline;
+            cursor: cell;
+        }
+
+        /*momento cuando estamos pulsando el boton*/
+        a:active{
+            border: 5px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Links</h1>
+    <p>Podemos ver la información sobre el mejor videojuego de la historia, el <a href="https://es.wikipedia.org/wiki/Age_of_Empires_II:_The_Age_of_Kings" target="_blank">Age of Empires 2</a>, en Wikipedia</p>
+</body>
+</html>
